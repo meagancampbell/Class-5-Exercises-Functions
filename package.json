@@ -10,6 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "bracket": "0.0.6",
+    "eslint": "^7.29.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-auto-close-empty-tag": "^1.0.2",
+    "readline-sync": "^1.4.10",
+    "syntax": "^1.6.2"
   }
 }
