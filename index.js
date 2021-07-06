@@ -21,14 +21,14 @@ function makeSquare(height){
 console.log(makeSquare(4));
 console.log();
 
-function makeRectangle(height) {
+function makeRectangle(width, height) {
    let rectangle = '';
    for (let i = 0; i < height; i++) {
-      rectangle += (makeLine(5) + '\n');
+      rectangle += (makeLine(width) + '\n');
    }
    return rectangle.slice(0, -1);
 }
-console.log(makeRectangle(3)+ '\n');
+console.log(makeRectangle(5, 3)+ '\n');
 console.log();
 
 function makeDownwardStairs(height){
@@ -38,13 +38,14 @@ function makeDownwardStairs(height){
   }
   return stairs.slice(0,-1);
 }
-console.log(makeDownwardStairs(5,1));
+console.log(makeDownwardStairs(5));
+console.log();
 
-function repeatString(string, height){
-   let lineSpace = '';
-  for (let i = 0; i < height; i++) {
-    lineSpace += (i + 1);
-  return lineSpace;
+function repeatString(width){
+   let lineSpace = '_';
+  for (let i = 0; i < width; i++) {
+    lineSpace += (makeLine(3) + '\n');
+  }
+  return lineSpace.slice(0,-1);
 }
-console.log(repeatString(6));
-
+console.log(repeatString(5));
